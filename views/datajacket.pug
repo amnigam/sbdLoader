@@ -1,0 +1,38 @@
+doctype html 
+html 
+    head 
+        title Data Capture Jacket 
+        link(rel="stylesheet" href="/style.css") 
+        script(src="script.js" defer) 
+    body 
+        .heading 
+            h1 Data Capture Jacket for Screener Questions across Service Lines 
+        .button-container 
+            button(class='add-activity', type='submit', name='add-activity') Add Activity 
+            button(class='del-activity', type='submit', name='del-activity') Remove Activity 
+        .main-container 
+            form(id='form', method='POST', action='/submitdata') 
+                .element 
+                    label(for='sl') Service Line 
+                    input(type="text", id="sl", name="sl", required) 
+                .element 
+                    label(for='domain') Domain 
+                    input(type="text", id="domain", name="domain", rquired) 
+                .element 
+                    label(for="description") Description 
+                    input(type="text", id="description", name="description")
+                .element 
+                    label(for="sbdID") SBD Question ID 
+                    input(type="text", id="sbdID", name="sbdID", required) 
+                .element 
+                    label(for="q1") Question 1 
+                    input(type="text", id="q1", name="q1", required) 
+                .element 
+                    label(for="q2") Question 2 
+                    input(type="text", id="q2", name="q2", required) 
+                .activity  
+                    label(for="act1") Activity List 
+                    input(type="text", id="act1", name="act1", required) 
+                .button 
+                    button(class='submit-button', type="submit", name="submit") Commit Data 
+                    button(class='reset-button', type='reset', name='reset') Reset Form 

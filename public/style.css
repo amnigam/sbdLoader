@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: lightgoldenrodyellow;
+}
+
+.heading {
+    margin: auto; 
+    text-align: center;
+}
+
+.main-container, .button-container {
+    margin: auto; 
+    width: 75%; 
+}
+
+form {
+    width: 100%;
+}
+
+.element > label, .activity > label {
+    width:30%; 
+}
+
+.element > input, .activity > input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-right: 10px; 
+    margin-bottom: 15px;
+    background-color: azure;
+}
+
+button:hover {
+    background-color: brown;
+}
