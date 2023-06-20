@@ -15,8 +15,8 @@ module.exports.buildData = (req, res, next) => {
     finalObj.desc = req.body.description;
     finalObj.sbdID = req.body.sbdID;
     finalObj.qn = []; 
-    finalObj.qn.push(req.body.q2);
     finalObj.qn.push(req.body.q1); 
+    finalObj.qn.push(req.body.q2);
     finalObj.act = actArr; 
     finalObj.sl = req.body.sl; 
     // console.log(actArr); 
